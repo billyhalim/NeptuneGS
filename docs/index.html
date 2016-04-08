@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation - NeptuneGS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="neptunegs.css" rel="stylesheet" type="text/css">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<style>
+	html{
+		height:100%;
+	}
+	body{
+		background-color:#0089FF;
+		background:-webkit-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed;
+		background:-o-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed ;
+		background:-moz-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed;
+		background:radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed;
+	}
+	</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="http://billyhalim.github.io/NeptuneGS" class="tit">NEPTUNE<font color="blue">GS</font></a></li>
+    <li><a href="https://github.com/billyhalim/NeptuneGS/archive/master.zip">Download</a></li>
+    <li><a href="http://billyhalim.github.io/NeptuneGS/example/">Example</a></li>
+  </ul>
+</nav>
+
+<div class="range">
+	<div class="sm-24 lg-24 md-24 xl-22 xl-left-1 cell maindocs">
+		<div class="xl-24 cell">
+			<h2 class="text-center">What is NeptuneGS ?</h2>
+			<p>Nowadays, grid system is important for front-end web developers. Websites today mostly are built with grid system as their base skeleton. Grid system consists of 2 important elements such as <b>row</b> and <b>column</b>. Without those 2 elements, a grid system cannot be built (unless you use tables). NeptuneGS give you especially for front-end web developers an easy way to construct your website using 24-column grid system. This grid system is also made for beginners who want to learn about modern front-end web development.</p>
+		</div>
+		<div class="xl-24 cell">
+			<h2 class="text-center">Requirement</h2>
+			<ul class="text-center">
+				<li>1. HTML</li><br>
+				<li>2. CSS - using multiple classes</li>
+			</ul>
+		</div>
+		<div class="xl-24 cell">
+			<h2 class="text-center">Getting Started</h2>
+			<p>In this part, I assume you have downloaded the <b>the starter kit</b> along with <b>neptunegs.css</b> file. Click on the <b>HTML</b> tab below and you will see the starter template. 
+			
+			<p data-height="350" data-theme-id="0" data-slug-hash="bpoQrx" data-default-tab="result" data-user="billyhalim" class="codepen">See the Pen <a href="https://codepen.io/billyhalim/pen/bpoQrx/">NeptuneGS Getting Started Template</a> by Billy Halim (<a href="http://codepen.io/billyhalim">@billyhalim</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//s.codepen.io/assets/embed/ei.js"></script>
+			</p>
+		</div>
+		<div class="xl-24 cell">
+			<h2 class="text-center">The Grid System</h2>
+			<article>
+			
+			NeptuneGS's grid system provides 4 viewport built-in classes to specify the width of a cell in different viewport such as <code>.sm-*</code>, <code>.md-*</code>, <code>.lg-*</code>, <code>.xl-*</code>. The <code>.sm-*</code> class is used for screen size below <i>700px</i> (smartphone). The <code>.md-*</code> class is used for screen size up to <i>700px</i> and below <i>1000px</i> (tablet). The <code>.lg-*</code> class is used for screen size up to <i>1000px</i> and below <i>1300px</i> (desktop). The <code>.xl-*</code> class is used for screen size up to <i>1300px</i> (larger desktop). The * sign is used to specify the width of a cell at maximum of 24. 
+			
+			<br><br>
+			
+			The 4 viewport built-in classes above <b>must</b> be used along with <code>.cell</code> class. The <code>.cell</code> class specify a column and this <code>.cell</code> <b>must</b> be used inside <code>.range</code> class. The <code>.range</code> class specify a row. A range might contain several cells with equal/non-equal width (depend on the 4 viewport built-in classes you use). <u>NeptuneGS is a 24-column grid</u>. So, the maximum sum of cells' width must be 24. 
+			
+			<br><br>
+			
+			The formula for creating a cell is like <b><code>&ltdiv class="sm-24 md-24 lg-12 xl-4 cell"> &lt/div&gt</code></b>. The <code>.cell</code> class is always placed behind the 4 viewport built-in classes that specify the width of a cell. If you don't specify the 4 viewport built-in classes and only specify the <code>.cell</code> class, the width will be 100% as default. The order of placement of the 4 built-in classes is the <code>.sm-</code> at <i>first place</i> and the <code>.xl-</code> at the <i>last place</i>. Run the example below : 
+			
+			<br><br>
+			
+			<p data-height="500" data-theme-id="0" data-slug-hash="fea0f49ee22e5ac11cf3c8f42abda7bf" data-default-tab="result" data-user="billyhalim" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/billyhalim/pen/fea0f49ee22e5ac11cf3c8f42abda7bf/">NeptuneGS Grid System Example</a> by Billy Halim (<a href="http://codepen.io/billyhalim">@billyhalim</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		
+			<br>
+			
+			The <code>.range</code> class has a width of 100% and a padding of 10px for content spacing. The <code>.cell</code> class has a width of 100% as default but if you add the 4 viewport built-in classes, the cell's width will depend on the width of the 4 viewport built-in classes. Also, the <code>.cell</code> class has a default padding of 10px (for content spacing) and margin-bottom of 10px (spacing between cells in smaller screen size).
+			
+			</article>
+		</div>
+		<div class="xl-24 cell">
+			<h2 class="text-center">Alignment</h2>
+			<article>
+			There are 3 alignment built-in classes in NeptuneGS. They are <code>[sm, md, lg, xl]-left-*</code>, <code>[sm, md, lg, xl]-right-*</code>, and <code>.centered</code>. The first one is used to position a cell with left spacing with the maximum * value of 24. The second one is used to position a cell with right spacing with the maximum * value of 24. Place the <code>[sm, md, lg, xl]-left-*</code> or <code>[sm, md, lg, xl]-right-*</code> class after a viewport built-in classes. The last one is <u>only</u> used to center a cell with the total sum of width is less than 24.
+			<br><br>
+			<b><font color="red">NOTE : </font></b> The <b>.centered</b> class has a <code>overflow:hidden</code> property. If you use the <code>.centered</code> class in a parent cell you want to center and also specify a height to it, the content of its child cells might be clipped. So, make sure you set the height of the parent cell until all their child contents are clearly visible <u>for all viewports</u>.
+			
+			<br><br>
+			
+			<p data-height="500" data-theme-id="0" data-slug-hash="b057d8b0f342d9b1a56d5a3cf826f027" data-default-tab="result" data-user="billyhalim" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/billyhalim/pen/b057d8b0f342d9b1a56d5a3cf826f027/">NeptuneGS Grid System Alignment</a> by Billy Halim (<a href="http://codepen.io/billyhalim">@billyhalim</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+			
+			</article>
+		</div>
+		<div class="xl-24 cell">
+			<h2 class="text-center">SPACING BETWEEN CELLS</h2>
+			<article>
+			A cell doesn't has any spacing with another cells next to it. This is the behaviour of <code>.cell</code> class. Spacing between cells can be done by using the <code>[sm, md, lg, xl]-left-*</code> and <code>[sm, md, lg, xl]-right-*</code> alignment class. However, NeptuneGS provides a built-in class called <code>.cell-sbc</code> where <code>sbc</code> stands for <code>spacing between cells</code>. Same as <code>.cell</code>, <code>.cell-sbc</code> also use the 4 viewport built-in and alignment classes that I have mentioned above. Because <code>.cell-sbc</code> makes spacing between cells, it has a <code>margin-left:0.8%</code> default properties. Run the example below. Actually, spacing between cells is needed when each of your cell has a background. So, it doesn't looks nice when it is stacked with other cells.
+			
+			<br><br>
+
+			<p data-height="500" data-theme-id="0" data-slug-hash="5c1b11388962bf57816a3948618dead0" data-default-tab="result" data-user="billyhalim" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/billyhalim/pen/5c1b11388962bf57816a3948618dead0/">NeptuneGS Spacing Between Cells</a> by Billy Halim (<a href="http://codepen.io/billyhalim">@billyhalim</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+			
+			<br>
+			
+			From the example, you will see some additional classes related to <code>.cell-sbc</code> such as <code>[sm, md, lg]-no-sbc</code> class and <code>.[sm, md, lg, xl]-o</code> class. Applying a <code>.cell-sbc</code> class, you make a spacing between cells but its behaviour will also be applied to all viewports. If you don't want that happen, the <code>[sm, md, lg]-no-sbc</code> class solve the problem. When you apply the <code>[sm, md, lg]-no-sbc</code> class, you change the the value of <code>.cell-sbc</code> margin-left value to 0 on the viewport you want. Beside that, the <code>.[sm, md, lg, xl]-o</code> class lets you optimize the cell where you don't want the margin-left sets to 0 on the viewport you want (because the <code>[sm, md, lg]-no-sbc</code> effect). See the example above once again in order to understand the concept.
+
+			<br><br>
+			
+			<b><font color="red">NOTE : </font></b> If you specify a class, for example, <code>md-*</code> but don't specify for the larger screen size, the behaviour of <code>md-*</code> will be applied to the larger screen size unless you specify for it using <code>lg-*</code> and <code>xl-*</code>.
+			</article>
+		</div>
+		<div class="xl-24 cell">
+			<h2 class="text-center">OTHER USEFUL BUILT-IN CLASS</h2>
+			<ul>
+				<li><code>1. text-center</code> : center a text. For centering an element, put the class on the parent.</li>
+				<li><code>2. text-left</code> : align left a text. For aligning left an element, put the class on the parent.</li>
+				<li><code>3. text-right</code> : align right a text. For aligning right an element, put the class on the parent.</li>
+				<li><code>4. center</code> : center a non-floated element directly without dealing with the parent.</li><br>
+				<li><code>5. image</code> : make images responsive</li>
+			</ul>
+		</div>
+	</div>
+	<div class="xl-24 cell copyright">
+		<h4 class="text-center">Copyright &copy; 2016 - NeptuneGS. Authored by <a href="http://billyhalim.github.io">Billy Halim</a>Do not duplicate the article above.</h4> 
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+	background-color:#323232;
+}
+
+.cell{
+    border:1px solid #000000;
+	background-color:#008DFF;
+	text-align:center;
+}
+
+.cell-sbc{
+	border:1px solid #000000;
+	background-color:#008DFF;
+	text-align:center;
+}
+
+.cell:last-child{
+	border-right:1px solid #000000;
+}
+
+h1, p{
+	color:#ffffff;
+}
