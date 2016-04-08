@@ -1,0 +1,164 @@
+@font-face {
+    font-family: planet;
+    src: url(planet.ttf);
+}
+
+
+@media (min-width:1300px){
+.range.cover{
+	background:#0089FF;
+	background:-webkit-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed;
+	background:-o-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed ;
+	background:-moz-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed;
+	background:radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) ), fixed;
+	height:768px;
+}
+}
+
+.range.cover{
+	background:#0089FF;
+	background:-webkit-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) );
+	background:-o-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) );
+	background:-moz-radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) );
+	background:radial-gradient(circle, rgba(0, 137, 255, 0.5), rgba(0, 205, 255, 0.5) );
+}
+
+@media (max-width:699px){
+.title > h1{
+	color:#444444;
+	font-family:planet;
+	font-size:50px;
+}
+}
+
+h1{
+	color:#444444;
+	font-family:planet;
+	font-size:100px;
+}
+
+h2{
+	color:#323232;
+	font-family:Verdana;
+	font-size:30px;
+}
+
+h3{
+	color:#F5F5FA;
+	font-family:Verdana;
+	font-size:30px;
+}
+
+h4{
+	color:#4B4B4B;
+	font-family:Verdana;
+	font-size:20px;
+}
+
+p, article{
+	font-size:17px;
+	font-family:Verdana;
+	margin-top:13px;
+	color:#393939;
+	line-height:1.5;
+}
+
+code{
+	font-family:consolas;
+	color:#000000;
+}
+
+.title{
+	margin-top:80px;
+}
+
+.docs{
+	background-color:#0000FF;
+	border:none;
+	padding:18px 0px;
+	color:#ffffff;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.download{
+	background-color:#FF8900;
+	border:none;
+	padding:18px 0px;
+	color:#ffffff;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.example{
+	background-color:#00D828;
+	border:none;
+	padding:18px 0px;
+	color:#ffffff;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+@media (max-width:999px){
+.feat{
+	background-color:#ffffff;
+	height:160px;
+}
+}
+@media (min-width:1000px){
+.feat{
+	background-color:#ffffff;
+	height:200px;
+}
+}
+
+.maindocs{
+	margin-top:50px;
+	background-color:#ffffff;
+	border-radius:5px;
+}
+
+/* CSS for menu */
+ul{
+  margin:0;
+  padding:0;
+}
+
+li{
+  font-family:Verdana;
+  display:inline-block;
+}
+nav{
+ background-color:#ffffff;
+}
+
+a{
+  text-decoration:none;
+  color:#000000;
+  display:inline-block;
+  padding:14px 16px;
+}
+
+a:hover{
+  background-color:orange;
+  border-radius:5px;
+}
+
+.tit{
+	font-family:planet;
+	font-size:23px;
+}
+
+.tit:hover{
+  background-color:transparent;
+}
+
+@media (max-width:900px){
+  li, a{
+    width:100%;
+  }
+}
+/* CSS for menu */	
