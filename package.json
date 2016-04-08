@@ -1,0 +1,27 @@
+{
+  "name": "neptunegs",
+  "version": "1.0.0",
+  "description": "A Simple Grid System for Beginners",
+  "main": "assets/neptunegs.css",
+  "directories": {
+    "doc": "docs",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billyhalim/NeptuneGS.git"
+  },
+  "keywords": [
+    "gridsystem",
+    "responsive"
+  ],
+  "author": "Billy Halim",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/billyhalim/NeptuneGS/issues"
+  },
+  "homepage": "https://billyhalim.github.io/neptunegs"
+}
